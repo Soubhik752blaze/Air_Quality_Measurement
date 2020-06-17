@@ -132,7 +132,8 @@ void loop()
   Serial.print(CO2ppm); // prints the value of CO2
   delay(2000); // wait 2s for next reading
 
-  if (WiFi.status() == WL_CONNECTED) { //Check WiFi connection status
+  if (WiFi.status() == WL_CONNECTED) 
+  { 
  
     HTTPClient http;  //Declare an object of class HTTPClient
     String getURL="http://aqmapi.herokuapp.com/api/data/add/";
